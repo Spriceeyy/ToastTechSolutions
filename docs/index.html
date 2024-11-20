@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toast Tech Solutions</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         .btn-primary {
             background-color: #000000;
@@ -21,10 +22,14 @@
 <body class="min-h-screen bg-white">
     <nav class="bg-black text-white p-4 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
-            <div class="text-2xl font-bold">Toast Tech Solutions</div>
+            <div class="text-2xl font-bold flex items-center">
+                <img src="images/logo.jpg" alt="Toast Tech Solutions Logo" class="h-16 w-auto mr-3">
+                <span>Toast Tech Solutions</span>
+            </div>
             <div class="space-x-4">
                 <a href="#about" class="hover:text-gray-300">About</a>
                 <a href="#services" class="hover:text-gray-300">Services</a>
+                <a href="#blog" class="hover:text-gray-300">Blog</a>
                 <a href="#contact" class="hover:text-gray-300">Contact</a>
             </div>
         </div>
@@ -65,6 +70,20 @@
             </div>
         </section>
 
+        <section id="blog" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Latest Updates</h2>
+            <div id="blog-posts" class="grid md:grid-cols-2 gap-6">
+                <!-- Blog posts will be loaded here -->
+            </div>
+        </section>
+
+        <section id="instagram-feed" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Instagram Feed</h2>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <!-- Instagram feed will be loaded here -->
+            </div>
+        </section>
+
         <section id="contact" class="mb-16">
             <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
             <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
@@ -78,8 +97,16 @@
 
     <footer class="bg-black text-white py-8">
         <div class="container mx-auto text-center">
+            <div class="mb-4">
+                <a href="https://www.instagram.com/toasttechsolutions/" target="_blank" class="text-white hover:text-gray-300 transition duration-300">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
             <p>&copy; 2024 Toast Tech Solutions. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="blog.js"></script>
+    <script src="instagramfeed.js"></script>
 </body>
 </html>
