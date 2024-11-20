@@ -1,26 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const blogForm = document.getElementById('new-post-form');
     const postsContainer = document.getElementById('blog-posts');
 
-    async function loadPosts() {
-        try {
-            const response = await fetch('http://localhost:8000/posts/');
-            const posts = await response.json();
-            renderPosts(posts);
-        } catch (error) {
-            console.error('Error loading posts:', error);
+    // Example blog posts
+    const posts = [
+        {
+            title: "Latest Project: AI Integration",
+            content: "We're excited to announce our latest AI integration project...",
+            date: "November 2024"
+        },
+        {
+            title: "Web Development Best Practices",
+            content: "Exploring modern web development approaches and technologies...",
+            date: "November 2024"
         }
-    }
+    ];
 
-    function renderPosts(posts) {
+    function renderPosts() {
         postsContainer.innerHTML = posts.map(post => `
-            <article class="bg-white rounded-lg shadow-lg p-6">
-                <h3 class="text-xl font-bold mb-4">${post.title}</h3>
-                <p class="text-gray-700 mb-4">${post.content}</p>
-                ${post.image_url ? `<img src="${post.image_url}" alt="${post.title}" class="w-full rounded-lg">` : ''}
+            <article class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">${post.title}</h3>
+                <p class="text-gray-600 mb-2">${post.date}</p>
+                <p class="text-gray-700">${post.content}</p>
             </article>
         `).join('');
     }
 
-    loadPosts();
+    renderPosts();
 });
