@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Toast Tech Solutions - Expert in AI, Machine Learning, Web Development, and Psychology-Based Solutions.">
+    <meta property="og:title" content="Toast Tech Solutions - Innovative Tech with a Human Touch">
+    <meta property="og:description" content="Expert in AI, Machine Learning, Web Development, and Psychology-Based Solutions.">
+    <meta property="og:image" content="path/to/hero-image.jpg">
+    <meta property="og:url" content="https://www.toasttechsolutions.com">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <title>Toast Tech Solutions - Innovative Tech with a Human Touch</title>
+    <style>
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animated-bg {
+            background: linear-gradient(-45deg, #4f46e5, #3730a3, #1e40af, #1e3a8a);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+        }
+        .btn-primary {
+            background-color: #4f46e5;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(79, 70, 229, 0.4);
+        }
+        .content-section:hover {
+            transform: scale(1.02);
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="animated-bg min-h-screen text-gray-800">
+    <nav class="glass-effect text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold flex items-center space-x-2">
+                <img src="/api/placeholder/50/50" alt="Toast Tech Solutions Logo" class="h-10">
+                <span>Toast Tech Solutions</span>
+            </div>
+            <div class="space-x-4">
+                <a href="#about" class="hover:text-gray-200">About</a>
+                <a href="#services" class="hover:text-gray-200">Services</a>
+                <a href="#projects" class="hover:text-gray-200">Projects</a>
+                <a href="#contact" class="hover:text-gray-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">Toast Tech Solutions</h1>
+            <p class="text-xl mb-8">Innovative Tech with a Human Touch</p>
+            <a href="#contact" class="btn-primary inline-block">Get Started</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-12 px-4">
+        <section id="about" class="mb-16 content-section p-8 rounded-lg shadow-lg">
+            <div class="md:flex items-center">
+                <img src="/api/placeholder/400/300" alt="About Toast Tech Solutions" class="md:w-1/2 mb-8 md:mb-0 md:mr-8 rounded-lg shadow-lg">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">About Us</h2>
+                    <p class="text-lg">
+                        We specialize in advanced AI, web development, and database solutions, blending cutting-edge technology with a deep understanding of human behavior.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Add the services, projects, and contact sections here as shown earlier -->
+    </main>
+
+    <footer class="glass-effect text-white py-8">
+        <div class="container mx-auto text-center">
+            <div class="mb-4">
+                <a href="https://www.instagram.com/toasttechsolutions/" target="_blank" class="text-white hover:text-blue-200 transition duration-300">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Toast Tech Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
